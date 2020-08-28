@@ -1,7 +1,6 @@
 <template>
-  <div class="home">
-    sxsad
-  </div>
+  <div>更新中...</div>
+
 </template>
 
 <script>

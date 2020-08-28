@@ -1,5 +1,5 @@
 <template>
-    <div>ssssss</div>
+    <div>更新中...</div>
 </template>
 
 <script>
