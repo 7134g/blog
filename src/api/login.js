@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const loging = (start, limit) => axios.get('/blog/user/login', { params: { start, limit } }).then(res => res.data);
+const loging = (username, password) => axios.get('/blog/user/login', { params: { start: username, limit: password } }).then(res => res.data);
 
 export {
     loging,
