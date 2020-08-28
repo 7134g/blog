@@ -62,6 +62,21 @@ export default new VueRouter({
       name: 'Login',
       component: () => import(/* webpackChunkName: "about" */ '../views/Login.vue'),
     },
+    {
+      path: '/NewArticle',
+      name: 'NewArticle',
+      component: () => import(/* webpackChunkName: "about" */ '../views/NewArticle.vue'),
+    },
+    {
+      path: '/DelArticle',
+      name: 'DelArticle',
+      component: () => import(/* webpackChunkName: "about" */ '../views/DelArticle.vue'),
+    },
+    {
+      path: '/ChangeArticle',
+      name: 'ChangeArticle',
+      component: () => import(/* webpackChunkName: "about" */ '../views/ChangeArticle.vue'),
+    },
 
 
   ],
