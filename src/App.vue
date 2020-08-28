@@ -1,14 +1,13 @@
 <template>
   <div id="app">
     <NarBar></NarBar>
-    <Home></Home>
+    <router-view></router-view>
 <!--    <Login></Login>-->
   </div>
 </template>
 
 <script>
 // import Login from './components/Login.vue';
-import Home from "./components/Home";
 import NarBar from './components/NarBar.vue';
 
 export default {
@@ -16,7 +15,6 @@ export default {
   components: {
     // Login,
     NarBar,
-    Home,
   },
 };
 </script>

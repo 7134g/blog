@@ -2,7 +2,7 @@
     <div id="home_page">
         <div class="go_to_Article">
 
-            <button @click="goArticles()" :class="{'login':Lstatus, 'login active': Astatus, 'login active verity': Fstatus}">
+            <button @click="goArticles()" :class="{'login':BottonStaStatus, 'login active': BottonMidStatus, 'login active verity': BottonFinStatus}">
                 <p>LOGIN</p>
                 <div class="loading ">
                     <div></div>
@@ -26,49 +26,23 @@
 
 <script>
     export default {
-        name: "Home",
+        name: "Login",
         data() {
             return {
-                Lstatus: true,
-                Astatus: false,
-                Fstatus: false,
+                BottonStaStatus: true,
+                BottonMidStatus: false,
+                BottonFinStatus: false,
             };
         },
         methods: {
-            // userLogin:function(){
-            //     var self = this;
-            //     reqwest({
-            //         url:'/api/login',
-            //         method:'post',
-            //         type:"json",
-            //
-            //         data:{
-            //             username:self.username,
-            //             password:self.password,
-            //         },
-            //         success:function (data) {
-            //             console.log(data);
-            //             if (data.loginType == "ok"){
-            //                 self.userUI = false;
-            //                 self.loginType = false;
-            //                 window.location.href = '/salecms';
-            //             }else{
-            //                 self.message = true
-            //             }
-            //         },
-            //         error:function (err) {
-            //             // console.log(err)
-            //         }
-            //     })
-            // },
             goArticles: function(){
-                this.Lstatus = false
-                this.Astatus = true
+                this.BottonStaStatus = false
+                this.BottonMidStatus = true
                 setTimeout(
                     () => {
-                        this.Astatus = false
-                        this.Fstatus = true
-                    }, 2000
+                        this.BottonMidStatus = false
+                        this.BottonFinStatus = true
+                    }, 500
                 )
 
             }
